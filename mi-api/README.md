@@ -1,5 +1,5 @@
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Blog](http://blog.csdn.net/fjnpysh)](Blog)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://blog.csdn.net/fjnpysh)
+
 #SpringCloud模块  
 
 ## 更新日志
