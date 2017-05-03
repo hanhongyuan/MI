@@ -14,4 +14,5 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     enable-self-preservation: true
-    eviction-interval-timer-in-ms: 30000
+    eviction-interval-timer-in-ms: 20000 #毫秒
+    #阀值根据分布式项目去设置单项目是一分钟保持2-3次跳正常少于则提示阀值不足若2个项目可延长时间
