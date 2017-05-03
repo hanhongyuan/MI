@@ -14,9 +14,9 @@
 ## 环境搭建
 
 #### 开发工具
-- IntelliJ IDEA Version(2017.1) for Code IDE
-- MySQL or Oracle for Database
-- Plsql or Navicat for DatabaseClient
+- **IntelliJ IDEA Version(2017.1)** for Code IDE
+- **MySQL** or **Oracle** for Database
+- **Plsql** or **Navicat** for DatabaseClient
     
 #### 开发环境
 - Jdk 8
