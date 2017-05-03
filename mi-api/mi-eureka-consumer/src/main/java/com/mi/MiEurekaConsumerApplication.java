@@ -17,12 +17,6 @@ import org.springframework.web.client.RestTemplate;
 @EnableFeignClients
 public class MiEurekaConsumerApplication {
 
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate(){
-		return  new RestTemplate();
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(MiEurekaConsumerApplication.class, args);
 	}

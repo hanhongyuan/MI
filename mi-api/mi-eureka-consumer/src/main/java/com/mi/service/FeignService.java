@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
+ * Feign调用接口
  * @author yesh
  *         (M.M)!
  *         Created by 2017/5/2.

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
+ * Ribbon消费模式
  * @author yesh
  *         (M.M)!
  *         Created by 2017/5/2.
@@ -15,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 public class RibbonController {
 
     @Autowired
-    RestTemplate restTemplate;
+    private RestTemplate restTemplate;
 
     @RequestMapping(value = "/helloR",method = RequestMethod.GET)
     public String Hello(){

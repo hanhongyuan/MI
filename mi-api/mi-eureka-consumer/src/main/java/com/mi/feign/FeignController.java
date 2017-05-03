@@ -8,12 +8,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * Feign消费模式
  * @author yesh
  *         (M.M)!
  *         Created by 2017/5/2.
  */
 @RestController
 public class FeignController {
+
+
     @Autowired
     FeignService feignService;
 
