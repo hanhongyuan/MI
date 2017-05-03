@@ -1,6 +1,6 @@
 # MI
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://blog.csdn.net/fjnpysh)
-[![Love](https://img.shields.io/gratipay/Shields.svg?style=social&label=Donate&maxAge=2592000)]()
+[![Love](https://img.shields.io/gratipay/Shields.svg?style=social&label=Donate&maxAge=0)](https://github.com/MIYAOW/MI)
 [![GitHub stars](https://img.shields.io/github/stars/MIYAOW/MI.svg?style=social&label=Stars)](https://github.com/MIYAOW/MI)
 [![GitHub forks](https://img.shields.io/github/forks/MIYAOW/MI.svg?style=social&label=Fork)](https://github.com/MIYAOW/MI)
 
