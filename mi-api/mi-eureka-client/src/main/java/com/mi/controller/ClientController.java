@@ -30,10 +30,12 @@ public class ClientController {
     public String hello1(@RequestParam String name){
         System.err.println("-----------------------------");
         ServiceInstance instance = discoveryClient.getInstances("mi-eureka-client").get(0);
+
         log.info("Method:---->"+this.getClass().getSimpleName()+"---->Hello");
         log.info("Url:---->"+instance.getUri());
         log.info("Host:---->"+instance.getHost());
         log.info("Port:---->"+instance.getPort());
+
         return "Hello !!   "+name + " ,I here in port  "+instance.getPort();
     }
 }

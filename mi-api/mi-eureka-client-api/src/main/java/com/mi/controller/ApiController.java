@@ -19,10 +19,12 @@ public class ApiController {
 
     private final Logger log = Logger.getLogger(ApiController.class);
 
-    String port="1001";
+    private final DiscoveryClient discoveryClient;
 
     @Autowired
-    DiscoveryClient discoveryClient;
+    public ApiController(DiscoveryClient discoveryClient) {
+        this.discoveryClient = discoveryClient;
+    }
 
     @RequestMapping("/hi")
     public String hello(@RequestParam String name){
@@ -35,6 +37,6 @@ public class ApiController {
         log.info("Host:---->"+instance.getHost());
         log.info("Port:---->"+instance.getPort());
 
-        return "hello"+name + " ,i here in port :" +port;
+        return "Hello Api "+name + " ,i here in port :" +instance.getPort();
     }
 }
