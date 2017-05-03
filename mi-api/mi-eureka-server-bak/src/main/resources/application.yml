@@ -1,18 +1,18 @@
 server:
-  port: 1000
+  port: 2000
 spring:
   application:
     name: mi-eureka-server
 
 eureka:
   instance:
-    hostname: mione # Windx C:\Windows\System32\drivers\etc 设置
+    hostname: mitwo # Windx C:\Windows\System32\drivers\etc 设置
   client:
-   #若取消集群注册中心配置 registerWithEureka  fetchRegistry  defaultZone 值修改
+    #若取消集群注册中心配置 registerWithEureka  fetchRegistry  defaultZone 值修改
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://mitwo:2000/eureka/
+      defaultZone: http://mione:1000/eureka/
   server:
     enable-self-preservation: true
     renewalPercentThreshold: 0 #设置更新率阈值
