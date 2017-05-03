@@ -11,10 +11,19 @@ import org.springframework.web.bind.annotation.RequestParam;
  *         (M.M)!
  *         Created by 2017/5/2.
  */
-@FeignClient(value = "MI-EUREKA-CLIENT")
+@FeignClient(name = "mi-eureka-client" , fallback = HystrixClientFallback.class)
 public interface FeignService {
 
     @RequestMapping(value = "hi",method = RequestMethod.GET)
-    String hello(@RequestParam(value = "name") String name);
+    String Hello(@RequestParam(value = "name") String name);
 
 }
+
+class HystrixClientFallback implements FeignService {
+    @Override
+    public String Hello(String name) {
+        return "erooe";
+    }
+}
+
+
