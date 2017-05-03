@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 控制器
+ * API服务提供控制器
  * @author yesh
  *         (M.M)!
  *         Created by 2017/5/2.
@@ -27,7 +27,8 @@ public class ApiController {
     @RequestMapping("/hi")
     public String hello(@RequestParam String name){
         System.err.println("-----------------------------");
-        ServiceInstance instance = discoveryClient.getInstances("mi-eureka-client-api").get(0);
+        //监听指定的服务提供者
+        ServiceInstance instance = discoveryClient.getInstances("mi-eureka-client").get(0);
 
         log.info("Method:---->"+this.getClass().getSimpleName()+"---->Hello");
         log.info("Url:---->"+instance.getUri());
