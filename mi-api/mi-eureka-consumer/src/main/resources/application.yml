@@ -1,0 +1,10 @@
+server:
+  port: 1003
+spring:
+  application:
+    name: mi-eureka-consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/
+
