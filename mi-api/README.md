@@ -15,6 +15,7 @@
 
 - 消费者提供服务并注册服务 Eureka Client
 
-   - `mi-eureka-client`(服务提供者)
+   - `mi-eureka-client` (服务提供者一)
+   - `mi-eureka-client-api` (服务提供者二)
     
 - 更新 `README.md` 等相关文档和示例；
